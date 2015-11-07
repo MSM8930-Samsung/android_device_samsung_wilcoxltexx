@@ -36,6 +36,9 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8930_cane_wilcox_eur_lte_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+# Build
+USE_CLANG_PLATFORM_BUILD := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := wilcoxlte,wilcoxltexx,SM-G3815
 
