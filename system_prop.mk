@@ -8,6 +8,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libpath=/system/lib/libsec-ril.so \
+    rild.libargs=-d/dev/smd0 \
+    telephony.lteOnGsmDevice=1 \
+    ro.telephony.default_network=9 \
     persist.rild.nitz_plmn="" \
     persist.rild.nitz_long_ons_0="" \
     persist.rild.nitz_long_ons_1="" \
