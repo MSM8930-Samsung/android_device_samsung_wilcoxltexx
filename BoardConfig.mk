@@ -57,12 +57,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/wilcoxltexx/bluetooth
 
-# Custom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/wilcoxltexx/ril/
-
 # NFC
 #BOARD_HAVE_NFC := true
 #BOARD_NFC_CHIPSET := pn547
+#BOARD_NFC_LPM_LOSES_CONFIG := true
 
 # Audio
 BOARD_HAVE_SAMSUNG_AUDIO := true
@@ -79,15 +77,15 @@ QCOM_USBAUDIO_ENABLED := true
 AUDIO_FEATURE_DEEP_BUFFER_RINGTONE := true
 
 
-# Charger
-BOARD_CHARGER_SHOW_PERCENTAGE := true
-BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_RES :=
 
 # Enable QCOM FM feature
 #AUDIO_FEATURE_ENABLED_FM := true
 #QCOM_FM_ENABLED := true
 #BOARD_USES_SEPERATED_FM := true
+
+# Allow suspend in charge mode
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Camera
 TARGET_NEED_DISABLE_AUTOFOCUS := true
@@ -96,6 +94,9 @@ TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 
 # Build our own PowerHAL
 TARGET_POWERHAL_VARIANT :=
+
+# Custom RIL class
+BOARD_RIL_CLASS := ../../../device/samsung/wilcoxltexx/ril/
 
 # CMHW
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
