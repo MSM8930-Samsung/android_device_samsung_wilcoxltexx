@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * RIL customization for Galaxy S4 Mini (GSM) devices
+ * RIL customization for Galaxy Express 2 (GSM) devices
  *
  * {@hide}
  */
@@ -152,7 +152,6 @@ public class WilcoxRIL extends RIL {
             int np = p.readInt();
             dc.numberPresentation = DriverCall.presentationFromCLIP(np);
             dc.name = p.readString();
-            // according to ril.h, namePresentation should be handled as numberPresentation;
             dc.namePresentation = DriverCall.presentationFromCLIP(p.readInt());
             int uusInfoPresent = p.readInt();
             if (uusInfoPresent == 1) {
