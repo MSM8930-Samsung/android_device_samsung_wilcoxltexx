@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libril_shim
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # call wilcox system props
 $(call inherit-product, device/samsung/wilcoxltexx/system_prop.mk)
 
