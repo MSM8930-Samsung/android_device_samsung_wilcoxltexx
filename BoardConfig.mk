@@ -25,6 +25,9 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/wilcoxltexx/include
 
+# Build with Clang by default
+USE_CLANG_PLATFORM_BUILD := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom user_debug=23 androidboot.bootdevice=msm_sdcc.1
 BOARD_KERNEL_BASE            := 0x80200000
@@ -35,9 +38,6 @@ TARGET_KERNEL_CONFIG         := cyanogen_cane_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_cane_wilcox_eur_lte_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
-
-# Build
-USE_CLANG_PLATFORM_BUILD := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := wilcoxlte,wilcoxltexx,SM-G3815
