@@ -148,10 +148,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libril_shim
 
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
-
 # Camera
 PRODUCT_PACKAGES += \
     Snap
@@ -163,6 +159,10 @@ PRODUCT_PACKAGES += \
 # Gello
 PRODUCT_PACKAGES += \
     Gello
+
+# Slim File Manager
+PRODUCT_PACKAGES += \
+    SlimFileManager
 
 # call wilcox system props
 $(call inherit-product, device/samsung/wilcoxltexx/system_prop.mk)
