@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libril_shim
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
