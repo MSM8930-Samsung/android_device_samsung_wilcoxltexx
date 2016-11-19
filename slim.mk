@@ -18,9 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from wilcoxltexx device
 $(call inherit-product, device/samsung/wilcoxltexx/wilcoxltexx.mk)
 
-# Enhanced NFC
-#$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
-
 # Inherit some common slim stuff.
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
