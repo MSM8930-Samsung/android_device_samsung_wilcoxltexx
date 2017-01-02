@@ -15,13 +15,13 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from loganreltexx device
+# Inherit from wilcoxltexx device
 $(call inherit-product, device/samsung/wilcoxltexx/wilcoxltexx.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_wilcoxltexx
+PRODUCT_NAME := lineage_wilcoxltexx
 PRODUCT_DEVICE := wilcoxltexx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
