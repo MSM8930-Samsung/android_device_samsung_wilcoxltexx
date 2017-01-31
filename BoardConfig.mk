@@ -93,3 +93,7 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 # CMHW
 BOARD_HARDWARE_CLASS += device/samsung/wilcoxltexx/cmhw
+
+ifeq ($(WITH_TWRP),true)
+-include device/samsung/wilcoxltexx/twrp.mk
+endif

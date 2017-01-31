@@ -158,6 +158,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Gello
 
+ifeq ($(WITH_TWRP),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0
+endif
+
 # call wilcox system props
 $(call inherit-product, device/samsung/wilcoxltexx/system_prop.mk)
 
@@ -165,4 +174,4 @@ $(call inherit-product, device/samsung/wilcoxltexx/system_prop.mk)
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
 # call dalvik heap config
-$(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
