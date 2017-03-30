@@ -68,9 +68,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/wilcoxltexx/blueto
 # Charger
 BOARD_NO_CHARGER_LED := true
 
-# Audio
-USE_CUSTOM_AUDIO_POLICY := 1
-
 # FM
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAVE_QCOM_FM := true
