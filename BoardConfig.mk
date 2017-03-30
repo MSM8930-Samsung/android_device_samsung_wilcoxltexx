@@ -41,7 +41,9 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 TARGET_OTA_ASSERT_DEVICE := wilcoxlte,wilcoxltexx,SM-G3815
 
 # Recovery
+
 TARGET_RECOVERY_FSTAB := device/samsung/wilcoxltexx/rootdir/fstab.qcom
+LZMA_RAMDISK_TARGETS := recovery
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
