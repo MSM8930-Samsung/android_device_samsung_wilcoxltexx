@@ -160,10 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
 # call wilcox system props
 $(call inherit-product, device/samsung/wilcoxltexx/system_prop.mk)
 
